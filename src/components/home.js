@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Grid } from 'react-mdl';
 class Home extends Component {
     render() {
         return (
