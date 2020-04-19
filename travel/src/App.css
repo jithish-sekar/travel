@@ -1,0 +1,106 @@
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.tamilnaduimg{
+  display: block;
+  height: 200px;
+  width: 300px;
+}
+
+
+
+
+body{
+  margin: 0;
+}
+
+.headernav{
+  margin-top: 0px;
+  text-align: center;
+  
+}
+.headernavspan{
+  display: inline-block;
+  color: black;
+  padding: .5em;
+  cursor: pointer;
+  font-weight: bold;
+  opacity: 0.8;
+  font-family: 'Muli', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
+  text-align: center;
+  font-size: 14px;
+}
+.headernavspan::before{
+  content: "";
+  width: 0%;
+  height: 3px;
+  display: block;
+  background-color:black;
+  margin-bottom: 5px;
+}
+.headernavspan:hover::before{
+  width: 100%;
+  transition: all .5s;
+}
+.home{
+  text-align: center;
+  color: white;
+}
+.bgcolorcomponent{
+  background-color: #FFE528;
+ 
+
+  height: 700px;
+}
+
+.bgimg{
+margin-top:20px ;
+widows: 160px;
+height: 120px;
+
+}
+.leavefoot{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
