@@ -7,7 +7,7 @@ class Home extends Component {
                     className='bgimg'
                     src='destiny1.png' />
                 <h4 className="leavefoot">
-                    Leave Your Footprints!!
+                    "Leave Your Footprints!"
                 </h4>
 
                 {/* lip card */}
