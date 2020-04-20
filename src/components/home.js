@@ -2,13 +2,41 @@ import React, { Component } from 'react';
 class Home extends Component {
     render() {
         return (
-            <div className='home'>
-                <img
-                    className='bgimg'
-                    src='destiny1.png' />
-                <h4 className="leavefoot">
-                    "Leave Your Footprints!"
-                </h4>
+
+            <div>
+                <div className='home'>
+                    <img
+                        className='bgimg'
+                        src='destiny1.png' />
+
+                    <div className="container">
+                        {/* <h4 className="leavefoot">
+                        "culture trip"
+                     </h4> */}
+                        <img
+                            className='travelpng'
+                            src='travel.png' />
+                        <div className="circle-container">
+                            <div className="circle"></div>
+                        </div>
+                        <div className="circle-container">
+                            <div className="circle"></div>
+                        </div>
+                        <div className="circle-container">
+                            <div className="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 className='planquatation'>We Plan Your Quatation</h1>
+                   <center> <button className='btnquatation'>Food & Drink</button>
+                    <button className='btnquatation'>See & Do</button>
+                    <button className='btnquatation'>Places To Stay</button>
+                    <button className='btnquatation'>Guides & Stay</button></center>
+
+
+                </div>
+
 
                 {/* lip card */}
 
