@@ -27,7 +27,7 @@ class HeaderComponent extends Component {
                         onClick={() => this.Aboutus()}
                     >About</span>
                     <span className='headernavspan'
-                     onClick={()=>this.Developers()}
+                        onClick={() => this.Developers()}
                     >Developers</span>
 
                 </nav>
