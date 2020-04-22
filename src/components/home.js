@@ -70,16 +70,16 @@ class Home extends Component {
     kldevotional() {
         this.props.history.push('/keraladevotional')
     }
- 
+
     kadevotional() {
-    this.props.history.push('/karnatakadevotional')    
+        this.props.history.push('/karnatakadevotional')
     }
 
 
     himachaldevotional() {
         this.props.history.push('/himachaldevotional')
     }
-  
+
 
     render() {
         return (
@@ -147,7 +147,7 @@ class Home extends Component {
                                         <h4>Tamilnadu</h4>
                                         <button
                                             className='btntamilnadudevotional'
-                                            onClick={()=>this.tndevotional()}
+                                            onClick={() => this.tndevotional()}
                                         >Tamilnadu devotional</button>                                    </div>
                                 </div>
                             </div></center><br />
@@ -164,7 +164,7 @@ class Home extends Component {
                                     <div className="flip-card-back">
                                         <h4>Kerala </h4>
                                         <button
-                                            onClick={()=>this.kldevotional()}
+                                            onClick={() => this.kldevotional()}
                                             className='btntamilnadudevotional'
                                         >Kerala devotional</button>
                                     </div>
@@ -181,7 +181,7 @@ class Home extends Component {
                                     <div className="flip-card-back">
                                         <h4>Karnataka</h4>
                                         <button
-                                            onClick={()=>this.kadevotional()}
+                                            onClick={() => this.kadevotional()}
                                             className='btntamilnadudevotional'
                                         >Karnataka devotional</button>
                                     </div>
@@ -199,7 +199,7 @@ class Home extends Component {
                                         <div className="flip-card-back">
                                             <h4>Himachal Pradesh</h4>
                                             <button
-                                                onClick={()=>this.himachaldevotional()}
+                                                onClick={() => this.himachaldevotional()}
                                                 className='btntamilnadudevotional'
                                             >Himachal devotional</button>
                                         </div>
@@ -448,9 +448,13 @@ class Home extends Component {
                             }
                         </div>
 
-
-
-
+                        <h2 className='exceptionalquality'>ECXEPTIONAL QUALITY</h2>
+                        <span className='crafting'>Crafting exceptional experiences in the</span><br/>
+                        <span className='crafting'> world's most memorable places.     <span></span>
+                        <button className='learnbtn'>Learn More</button>
+                         
+                        </span>
+                        
 
 
                     </div >

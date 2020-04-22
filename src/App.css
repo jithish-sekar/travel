@@ -329,3 +329,48 @@ color:black;
   background-color: rgb(67, 67, 196);
   font-family: 'Noto Sans JP', sans-serif;
 }
+.exceptionalquality{
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  font-weight: 800px;
+}
+@media(max-width: 500px){
+  .exceptionalquality{
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.crafting{
+  text-align: center ;
+  font-size: 28px;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+  margin-left: 30%;
+}
+@media(max-width:500px){
+  .crafting{
+    font-size: 22px;
+    margin-left: 0px;
+  }
+}
+.learnbtn{
+  height: 50px;
+  width:120px;
+  background-color:white;
+  border-radius: 5px;
+  border: 2px solid #484848;
+  color:#484848;
+  padding: 1em;
+}
+.learnbtn:focus{
+  outline: none;
+}
+@media(max-width:500px){
+  .learnbtn{
+    margin-left: 34%;
+  }
+}
