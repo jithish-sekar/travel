@@ -91,14 +91,14 @@ class Tndevotional extends Component {
                             className='gallery'
                             src="tamildevo3.jpg" />
                         <h1 className='instruction'>
-                        Kumbakonam dates back to the Sangam period and was ruled by the Early Cholas, Pallavas, Medieval Cholas, Later Cholas, Pandyas, the Vijayanagara Empire, Madurai Nayaks, Thanjavur Nayaks and the Thanjavur Marathas. I
+                            Kumbakonam dates back to the Sangam period and was ruled by the Early Cholas, Pallavas, Medieval Cholas, Later Cholas, Pandyas, the Vijayanagara Empire, Madurai Nayaks, Thanjavur Nayaks and the Thanjavur Marathas. I
                         </h1>
                         <button className='btnquatation'>Food & Drink</button>
                         <button className='btnquatation'>See & Do</button>
                         <button className='btnquatation '>Lifestyle</button>
                         <h4 className='tndevotional'> Book Your Stay </h4>
                         <button className='enqbook'>Book</button>
-                        
+
 
 
 
