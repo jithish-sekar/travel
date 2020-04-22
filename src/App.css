@@ -345,16 +345,15 @@ color:black;
 }
 
 .crafting{
-  text-align: center ;
   font-size: 28px;
   color: #fff;
   font-family: 'Playfair Display', serif;
-  margin-left: 30%;
+ text-align: center;
 }
 @media(max-width:500px){
   .crafting{
-    font-size: 22px;
-    margin-left: 0px;
+    font-size: 20px;
+  
   }
 }
 .learnbtn{
@@ -365,12 +364,15 @@ color:black;
   border: 2px solid #484848;
   color:#484848;
   padding: 1em;
+  cursor: pointer;
 }
 .learnbtn:focus{
   outline: none;
 }
 @media(max-width:500px){
   .learnbtn{
-    margin-left: 34%;
+  
+    cursor: pointer;
+    
   }
 }

@@ -79,7 +79,9 @@ class Home extends Component {
     himachaldevotional() {
         this.props.history.push('/himachaldevotional')
     }
-
+    learn() {
+        this.props.history.push('/aboutus')
+    }
 
     render() {
         return (
@@ -447,14 +449,17 @@ class Home extends Component {
                                 : null
                             }
                         </div>
-
-                        <h2 className='exceptionalquality'>ECXEPTIONAL QUALITY</h2>
-                        <span className='crafting'>Crafting exceptional experiences in the</span><br/>
-                        <span className='crafting'> world's most memorable places.     <span></span>
-                        <button className='learnbtn'>Learn More</button>
-                         
-                        </span>
                         
+                        <h2 className='exceptionalquality'>ECXEPTIONAL QUALITY</h2>
+                        <h1 className='crafting'>Crafting exceptional experiences in the
+                        world's most memorable places.
+                        </h1>
+                        <center>
+                        <button
+                            onClick={() => this.learn()}
+                            className='learnbtn'>Learn More
+                        </button>
+                        </center>
 
 
                     </div >
