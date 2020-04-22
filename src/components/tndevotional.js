@@ -21,7 +21,7 @@ class Tndevotional extends Component {
                         className='devimg'
                         src='pray.png' />
                 </center>
-                <h2 className='tndevotional'>Destinys Devotional Package</h2>
+                <h2 className='tndevotional'>Destinys Devotional Packages</h2>
                 <center>
                     <a href="tamilnadu devotional 5 days(1).pdf">
                         <button

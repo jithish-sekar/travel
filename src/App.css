@@ -376,3 +376,16 @@ color:black;
     
   }
 }
+.footer{
+  margin-top: 0;
+  height:100px;
+  color:#a5a5a5
+}
+.ftrp{
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 14px;
+  padding: 1em;
+}
