@@ -109,7 +109,7 @@ class Home extends Component {
                 {/* button */}
                 <div>
                     <h1 className='planquatation'>We Plan Your Quotation</h1>
-                    <h4 className='culturetrip'>"Culture Trip"</h4>
+                    <h4 className='culturetrip'>"Cultur Trip"</h4>
                     <br />
                     <center>
                         <button

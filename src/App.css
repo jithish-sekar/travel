@@ -244,8 +244,8 @@ color:black;
   text-align: center;
   color: #fff;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 17px;
+  /* font-weight: 500; */
 }
 .btntamilnadudevotional{
   background-color: #fff;
@@ -315,7 +315,7 @@ color:black;
 .tndevotional{
   text-align: center;
   font-size: 26px;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-family: 'Cormorant Garamond', serif;
 }
 .enqbook{
