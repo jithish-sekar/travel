@@ -4,13 +4,41 @@ class Tndevotional extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            showthanjavurfood: false,
+            showseedo: false,
+            showlifestyle: false,
         }
     }
 
     enquiry() {
         this.props.history.push('/enquiry')
     }
+
+    thanjavurfood() {
+        this.setState({
+            showseedo: false,
+            showthanjavurfood: !this.state.showthanjavurfood,
+            showlifestyle: false
+        })
+    }
+
+    seedo() {
+        this.setState({
+            showlifestyle: false,
+            showseedo: !this.state.showseedo,
+            showthanjavurfood: false,
+        })
+    }
+
+    thanjlifestyle() {
+        this.setState({
+            showseedo: false,
+            showthanjavurfood: false,
+            showlifestyle: !this.state.showlifestyle
+        })
+}
+
+
     render() {
         return (
 
@@ -57,12 +85,73 @@ class Tndevotional extends Component {
                         <h1 className='instruction'>
                             Cauvery Delta is a region of Tamil Nadu state in southern India. It encompasses the lower reaches of the Kaveri River and its delta, and formed the cultural homeland and political base of the Chola Dynasty which ruled most of South India and parts of Sri Lanka and South-East Asia between the 9th and 13th centuries AD.
                         </h1>
-                        <button className='btnquatation'>Food & Drink</button>
-                        <button className='btnquatation'>See & Do</button>
-                        <button className='btnquatation '>Lifestyle</button>
+                        <button
+                            onClick={() => this.thanjavurfood()}
+                            className='btnquatation'>Food & Drink</button>
+                        <button
+                            onClick={() => this.seedo()}
+                            className='btnquatation'>See & Do</button>
+                        <button
+                            onClick={() => this.thanjlifestyle()}
+                            className='btnquatation '>Lifestyle</button>
+
+
+
+                        {this.state.showthanjavurfood ?
+                            <div className='popexplore'>
+                                <h1 className='foods'>Ashoka Halwa</h1>
+                                <img
+                                    className='gallery1'
+                                    src="ashokahalwa.jpg" />
+                                <h1 className='foods'>Thavala Adai</h1>
+                                <img
+                                    className='gallery1'
+                                    src='thavalaadai.jpg' />
+                            </div>
+                            : null
+                        }
+
+
+
+
+                        {this.state.showseedo ?
+                            <div className='popexplore'>
+                                <h1 className='foods'>Brihadeeswara Temple</h1>
+                                <img
+                                    className='gallery1'
+                                    src="thanjavurbigtemple.jpg" />
+                                <h1 className='foods'>Thanjavur Thalayatti Bommai</h1>
+                                <img
+                                    className='gallery1'
+                                    src='thalaiattibomai.jpg' />
+                            </div>
+                            : null
+                        }
+
+                        {this.state.showlifestyle ?
+                            <div className='popexplore'>
+                                <h1 className='foods'>Big Temple Consecration</h1>
+                                <img
+                                    className='gallery1'
+                                    src="bigtemplecon.jpg" />
+                                <h1 className='foods'>Thanjavur Thalayatti Bommai</h1>
+                                <img
+                                    className='gallery1'
+                                    
+                                    src='thalaiattibomai.jpg' />
+                            </div>
+                            : null
+                        }
+
+
+
+
+
                         <h4 className='tndevotional'> Book Your Stay </h4>
                         <button className='enqbook'>Book</button>
                         <hr />
+
+
 
 
                         <h5 className='mapnav'>

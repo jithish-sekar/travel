@@ -427,4 +427,19 @@ color:black;
 .instruction{
   font-size: 14px;
   font-style: 'Noto Sans JP', sans-serif;
-padding: 10px;}
+  padding: 10px;
+}
+.gallery1{
+    height:100px;
+    width:150px;
+}
+.foods{
+  /* font-style: 'Noto Sans JP', sans-serif; */
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+
+.popexplore{
+  background-color: #fff;
+  border-radius: 20px;
+}
