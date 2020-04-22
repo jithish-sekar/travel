@@ -379,7 +379,7 @@ color:black;
 .footer{
   margin-top: 0;
   height:100px;
-  color:#a5a5a5
+  color:#c5c4c4
 }
 .ftrp{
   margin: 0;
@@ -388,4 +388,18 @@ color:black;
   font-family: 'Exo 2', sans-serif;
   font-size: 14px;
   padding: 1em;
+}
+.linkfb{
+  color: #c0b9b9;
+  margin-right: 20px;
+}
+.linkfb a{
+  color: rgb(100, 97, 97);
+  padding: 1em;
+}
+.copyryt{
+  font-size: 10px;
+}
+.copyryt a{
+  color:rgb(100, 97, 97)
 }
