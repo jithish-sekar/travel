@@ -7,6 +7,7 @@ import Tndevotional from './tndevotional';
 import Kldevotional from './kldevotional';
 import Kadevotional from './kadevotional'
 import Himachaldevotional from './himachaldevotional';
+import FormsPage from './formvalidation';
 
 const Main = () => (
     <Switch>
@@ -17,7 +18,8 @@ const Main = () => (
         <Route path='/tamilnadudevotional' component={Tndevotional} />
         <Route path='/keraladevotional' component={Kldevotional} />
         <Route path='/karnatakadevotional' component={Kadevotional} />
-        <Route path='/himachaldevotional' component={Himachaldevotional}/>
+        <Route path='/himachaldevotional' component={Himachaldevotional} />
+        <Route path='/enquiry' component={FormsPage} />
     </Switch>
 )
 export default withRouter(Main);

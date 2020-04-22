@@ -44,10 +44,63 @@ class Tndevotional extends Component {
                             className='enqbook'>
                             Enquiry
                         </button>
+                        <br /><hr />
+
+
                         <h4 className='tndevotional'>Explore</h4>
+                        <h5 className='mapnav'>
+                            <i class="fa fa-map-marker"></i>Tanjore
+                        </h5>
+                        <img
+                            className="gallery"
+                            src="tamildevo1.jpg" /><br />
+                        <h1 className='instruction'>
+                            Cauvery Delta is a region of Tamil Nadu state in southern India. It encompasses the lower reaches of the Kaveri River and its delta, and formed the cultural homeland and political base of the Chola Dynasty which ruled most of South India and parts of Sri Lanka and South-East Asia between the 9th and 13th centuries AD.
+                        </h1>
                         <button className='btnquatation'>Food & Drink</button>
                         <button className='btnquatation'>See & Do</button>
                         <button className='btnquatation '>Lifestyle</button>
+                        <h4 className='tndevotional'> Book Your Stay </h4>
+                        <button className='enqbook'>Book</button>
+                        <hr />
+
+
+                        <h5 className='mapnav'>
+                            <i class="fa fa-map-marker"></i>Madurai
+                        </h5>
+                        <img
+                            className='gallery'
+                            src="tamildevo2.jpg" />
+                        <h1 className='instruction'>
+                            Madurai is closely associated with the Tamil language, and the third Tamil Sangam, a major congregation of Tamil scholars said to have been held in the city. The recorded history of the city goes back to the 3rd century BCE, being mentioned by Megasthenes, the Greek ambassador to the Maurya empire, and Kautilya, a minister of the Mauryan emperor Chandragupta Maurya. Signs of human settlements and Roman trade links dating back to 300 BC are evident from excavations by Archeological Survey of India in Manal
+                        </h1>
+                        <button className='btnquatation'>Food & Drink</button>
+                        <button className='btnquatation'>See & Do</button>
+                        <button className='btnquatation '>Lifestyle</button>
+                        <h4 className='tndevotional'> Book Your Stay </h4>
+                        <button className='enqbook'>Book</button>
+                        <hr />
+
+
+
+
+                        <h5 className='mapnav'>
+                            <i class="fa fa-map-marker"></i>Kumbakonam
+                        </h5>
+                        <img
+                            className='gallery'
+                            src="tamildevo3.jpg" />
+                        <h1 className='instruction'>
+                        Kumbakonam dates back to the Sangam period and was ruled by the Early Cholas, Pallavas, Medieval Cholas, Later Cholas, Pandyas, the Vijayanagara Empire, Madurai Nayaks, Thanjavur Nayaks and the Thanjavur Marathas. I
+                        </h1>
+                        <button className='btnquatation'>Food & Drink</button>
+                        <button className='btnquatation'>See & Do</button>
+                        <button className='btnquatation '>Lifestyle</button>
+                        <h4 className='tndevotional'> Book Your Stay </h4>
+                        <button className='enqbook'>Book</button>
+                        
+
+
 
 
 

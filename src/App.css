@@ -324,6 +324,7 @@ color:black;
   font-size: 18px;
   text-align: center;
   border-radius: 3px;
+  cursor: pointer;
   color: #fff;
   border: 1px solid rgb(67, 67, 196);
   background-color: rgb(67, 67, 196);
@@ -379,7 +380,7 @@ color:black;
 .footer{
   margin-top: 0;
   height:100px;
-  color:#c5c4c4
+  color:#9e9a9a
 }
 .ftrp{
   margin: 0;
@@ -401,5 +402,30 @@ color:black;
   font-size: 10px;
 }
 .copyryt a{
-  color:rgb(100, 97, 97)
+  color:rgb(58, 56, 56)
 }
+
+.formstyle{
+  background-color: white;
+}
+
+.gallery{
+ 
+  height:150px;
+  width:200px;
+  filter: grayscale(100%);
+  transition: .8s;
+}
+.gallery:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.mapnav{
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #fff;
+  font-size: 17px;
+}
+.instruction{
+  font-size: 14px;
+  font-style: 'Noto Sans JP', sans-serif;
+padding: 10px;}
