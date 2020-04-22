@@ -36,7 +36,7 @@ class Tndevotional extends Component {
             showthanjavurfood: false,
             showlifestyle: !this.state.showlifestyle
         })
-}
+    }
 
 
     render() {
@@ -137,7 +137,6 @@ class Tndevotional extends Component {
                                 <h1 className='foods'>Thanjavur Thalayatti Bommai</h1>
                                 <img
                                     className='gallery1'
-                                    
                                     src='thalaiattibomai.jpg' />
                             </div>
                             : null
@@ -180,7 +179,7 @@ class Tndevotional extends Component {
                             className='gallery'
                             src="tamildevo3.jpg" />
                         <h1 className='instruction'>
-                            Kumbakonam dates back to the Sangam period and was ruled by the Early Cholas, Pallavas, Medieval Cholas, Later Cholas, Pandyas, the Vijayanagara Empire, Madurai Nayaks, Thanjavur Nayaks and the Thanjavur Marathas. I
+                            Kumbakonam dates back to the Sangam period and was ruled by the Early Cholas, Pallavas, Medieval Cholas, Later Cholas, Pandyas, the Vijayanagara Empire, Madurai Nayaks, Thanjavur Nayaks and the Thanjavur Marathas.
                         </h1>
                         <button className='btnquatation'>Food & Drink</button>
                         <button className='btnquatation'>See & Do</button>
