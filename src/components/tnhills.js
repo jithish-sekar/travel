@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-class tndevotional extends Component {
+class Tnhills extends Component {
 
     constructor(props) {
         super(props);
@@ -95,22 +95,22 @@ class tndevotional extends Component {
         return (
 
             <div>
-                <h1 className='devotionalh1'>Tamilnadu Devotional</h1>
+                <h1 className='devotionalh1'>Tamilnadu Hills Station</h1>
                 <center>
                     <img
                         className='devimg'
-                        src='pray.png' />
+                        src='hills.png' />
                 </center>
-                <h2 className='tndevotional'>Destinys Devotional Packages</h2>
+                <h2 className='tndevotional'>Destinys Hills Station Packages</h2>
                 <center>
-                    <a href="tamilnadu devotional 5 days(1).pdf">
+                    <a href="tnhills.pdf">
                         <button
                             className='btnquatation'>
                             Package 1
                             <i class="fa fa-download"></i>
                         </button>
                     </a>
-                    <a href="2tamilnadu package.pdf">
+                    <a href="tnhills2.pdf">
                         <button className='btnquatation'>
                             Package 2
                             <i class="fa fa-download"></i>
@@ -129,13 +129,13 @@ class tndevotional extends Component {
                         {/* thanjavur */}
                         <h4 className='tndevotional'>Explore</h4>
                         <h5 className='mapnav'>
-                            <i class="fa fa-map-marker"></i>Tanjore
+                            <i class="fa fa-map-marker"></i>Ooty
                         </h5>
                         <img
                             className="gallery"
-                            src="tamildevo1.jpg" /><br />
+                            src="ooty1.jpg" /><br />
                         <h1 className='instruction'>
-                            Cauvery Delta is a region of Tamil Nadu state in southern India. It encompasses the lower reaches of the Kaveri River and its delta, and formed the cultural homeland and political base of the Chola Dynasty which ruled most of South India and parts of Sri Lanka and South-East Asia between the 9th and 13th centuries AD.
+                        Ooty (About this soundlisten (help·info)), officially known as Udagamandalam (also known as Ootacamund About this soundlisten (help·info); abbreviated as Udhagai), is a town and a municipality in the Niligiris District of the Indian state of Tamil Nadu.
                         </h1>
                         <button
                             onClick={() => this.thanjavurfood()}
@@ -151,14 +151,13 @@ class tndevotional extends Component {
 
                         {this.state.showthanjavurfood ?
                             <div className='popexplore'>
-                                <h1 className='foods'>Ashoka Halwa</h1>
+                                <h1 className='foods'>Tea Dust</h1>
                                 <img
                                     className='gallery1'
-                                    src="ashokahalwa.jpg" />
-                                <h1 className='foods'>Thavala Adai</h1>
-                                <img
+                                    src="teadust.jpg" />
+                                <h1 className='foods'>Home made Choclates</h1>                                <img
                                     className='gallery1'
-                                    src='thavalaadai.jpg' />
+                                    src='homemade.jpg' />
                             </div>
                             : null
                         }
@@ -168,14 +167,21 @@ class tndevotional extends Component {
 
                         {this.state.showseedo ?
                             <div className='popexplore'>
-                                <h1 className='foods'>Brihadeeswara Temple</h1>
+                                <h1 className='foods'>Pykara Falls</h1>
                                 <img
                                     className='gallery1'
-                                    src="thanjavurbigtemple.jpg" />
-                                <h1 className='foods'>Thanjavur Thalayatti Bommai</h1>
+                                    src="pykara.jpg" />
+                                <h1 className='foods'>Catherine Falls</h1>
                                 <img
                                     className='gallery1'
-                                    src='thalaiattibomai.jpg' />
+                                    src='catherine.jpg' />
+                               <h1 className='foods'>Lamb's Rock</h1>
+                                <img
+                                    className='gallery1'
+                                    src='lambs.jpg' />
+                               
+                                
+
                             </div>
                             : null
                         }
@@ -378,4 +384,4 @@ class tndevotional extends Component {
         )
     }
 }
-export default tndevotional;
+export default Tnhills;

@@ -435,11 +435,15 @@ color:black;
 }
 .foods{
   /* font-style: 'Noto Sans JP', sans-serif; */
-  font-family: 'Cormorant Garamond', serif;
+   font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
 }
 
 .popexplore{
   background-color: #fff;
   border-radius: 20px;
+}
+
+.logo{
+height: 37px;
 }

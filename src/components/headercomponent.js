@@ -18,8 +18,15 @@ class HeaderComponent extends Component {
     render() {
         return (
 
-            <div>
+            <div className='head'>
+
                 <nav className='headernav'>
+                    <div className='log'>
+                    <img
+                        className='logo'
+                        src='logo1.png' />   
+                   </div>
+                        <div className='head1'>
                     <span className='headernavspan'
                         onClick={() => this.Home()}
                     >Home</span>
@@ -29,7 +36,7 @@ class HeaderComponent extends Component {
                     <span className='headernavspan'
                         onClick={() => this.Developers()}
                     >Developers</span>
-
+                    </div>       
                 </nav>
             </div>
         )

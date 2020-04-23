@@ -82,6 +82,9 @@ class Home extends Component {
     learn() {
         this.props.history.push('/aboutus')
     }
+    tnhills() {
+        this.props.history.push('/tamilnaduhills')
+    }
 
     render() {
         return (
@@ -228,8 +231,9 @@ class Home extends Component {
                                             src='tamilnaduhills.jpg' alt="Avatar" />
                                     </div>
                                     <div className="flip-card-back">
-                                        <h4>Tamilnadu</h4>
+                                        <h4></h4>
                                         <button
+                                            onClick={()=>this.tnhills()}
                                             className='btntamilnadudevotional'
                                         >Tamilnadu Hills</button>
                                     </div>
