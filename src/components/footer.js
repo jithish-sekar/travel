@@ -6,7 +6,7 @@ class Footerpage extends Component {
             <div className='footer'>
                 <img
                     className='bgimgfooter1'
-                    src='bag.png' />
+                    src='bag (2).png' />
                 <center>
                     <br/>
                     <div className='linkfb'>

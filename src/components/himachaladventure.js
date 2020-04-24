@@ -160,7 +160,7 @@ class Himachaladventure extends Component {
 
                             </div>
                             <div className='adventure'>
-                                <h2>2.Trekking</h2>
+                                <h2>3.Trekking</h2>
                                 <img
                                     className='adv'
                                     src="trekking.jpg" />

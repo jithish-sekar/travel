@@ -97,7 +97,12 @@ class Home extends Component {
     utadv() {
         this.props.history.push('/uttarakhandadvebture')
     }
-
+    goabeach() {
+        this.props.history.push('/goabeach')
+    }
+    keralabeach() {
+      this.props.history.push('/keralabeach')
+  }
     render() {
         return (
 
@@ -353,13 +358,17 @@ class Home extends Component {
                                             </div>
                                             <div className="flip-card-back">
                                                 <h4>Goa</h4>
-                                                <button className='btntamilnadudevotional'
-                                                >Goa beachside</button>
+                                                <button
+                                                    onClick={()=>this.goabeach()}
+                                                    className='btntamilnadudevotional'
+                                                >Goa </button>
                                             </div>
                                         </div>
                                     </div></center><br />
 
 
+
+                                    
 
                                     <center><div className="flip-card">
                                         <div className="flip-card-inner">
@@ -369,24 +378,11 @@ class Home extends Component {
                                                     src='beachka.jpg' alt="Avatar" />
                                             </div>
                                             <div className="flip-card-back">
-                                                <h4>Karnataka</h4>
-                                                <button className='btntamilnadudevotional'
-                                                >Karnataka beachside</button>
-                                            </div>
-                                        </div>
-                                    </div></center><br />
-
-                                    <center><div className="flip-card">
-                                        <div className="flip-card-inner">
-                                            <div className="flip-card-front">
-                                                <img
-                                                    className='tamilnaduimg'
-                                                    src='beachkl.jpg' alt="Avatar" />
-                                            </div>
-                                            <div className="flip-card-back">
                                                 <h4>Kerala</h4>
-                                                <button className='btntamilnadudevotional'
-                                                >Kerala beachside</button>
+                                                <button
+                                                    onClick={()=>this.keralabeach()}
+                                                    className='btntamilnadudevotional'
+                                                >Kerala</button>
                                             </div>
                                         </div>
                                     </div></center>

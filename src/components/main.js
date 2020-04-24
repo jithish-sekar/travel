@@ -13,6 +13,8 @@ import Klhills from './klhills';
 import Himachalhills from './himachalhills';
 import Himachaladventure from './himachaladventure';
 import Utadventure from './uttarakhandadventure';
+import Goa from './goabeach';
+import Keralabeach from './keralabeach';
 
 const Main = () => (
     <Switch>
@@ -28,7 +30,9 @@ const Main = () => (
         <Route path='/keralahills' component={Klhills} />
         <Route path='/himachalhills' component={Himachalhills}/>
         <Route path='/himachaladventure' component={Himachaladventure} />
-        <Route path='/uttarakhandadvebture' component={Utadventure}/>
+        <Route path='/uttarakhandadvebture' component={Utadventure} />
+        <Route path='/goabeach' component={Goa} />
+        <Route path='/keralabeach' component={Keralabeach}/>
         <Route path='/enquiry' component={FormsPage} />
     </Switch>
 )

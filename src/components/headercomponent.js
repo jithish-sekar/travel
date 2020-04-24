@@ -24,7 +24,7 @@ class HeaderComponent extends Component {
                     <div className='log'>
                     <img
                         className='logo'
-                        src='logo1.png' />   
+                        src='logo2.png' />   
                    </div>
                         <div className='head1'>
                     <span className='headernavspan'
