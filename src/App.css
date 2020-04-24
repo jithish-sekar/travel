@@ -289,7 +289,7 @@ color:black;
 } 
 @media(max-width: 500px){
   .bgimgfooter1{
-    height:100px;
+    height:99px;
     width:85px;
     opacity: 1;
     bottom: 0;
@@ -458,4 +458,56 @@ height: 37px;
   font-size: 13px;
   /* font-family: 'PT Sans Narrow', sans-serif; */
   opacity: 1;
+}
+/* about */
+.aboutPage{
+  text-align: center
+
+}
+.h1about{
+  text-align: center;
+  color: #f2fcfe;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 30px;
+}
+.h2about{
+  text-align: center;
+  color:black;
+  font-size: 15px;
+  font-family: 'Comic Neue', cursive;
+  margin-top: 30px;
+}
+.discover{
+  text-align: center;
+  margin-top: 40px;
+}
+.span1{
+  
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  margin-right: 50px;
+  text-align: center; 
+  display: block;
+  width: 100%;
+  font-weight: 600;
+}
+
+.strategies{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.strategies .p-30px{
+  padding:30px;
+}
+.strategies li{
+  list-style: none;
+  text-align: center;
+}
+.li1{
+  color: black;
+  font-size: 17px;
+  font-weight: 250;
 }

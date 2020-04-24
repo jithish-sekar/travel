@@ -102,7 +102,12 @@ class Home extends Component {
     }
     keralabeach() {
       this.props.history.push('/keralabeach')
-  }
+    }
+    goaparty() {
+        this.props.history.push('/goaparty')
+    }
+
+
     render() {
         return (
 
@@ -210,25 +215,7 @@ class Home extends Component {
                                 </div>
                             </div></center><br />
 
-                            <center>
-                                <div className="flip-card">
-                                    <div className="flip-card-inner">
-                                        <div className="flip-card-front">
-                                            <img
-                                                className='tamilnaduimg'
-                                                src='templehimachal.jpg' alt="Avatar" />
-                                        </div>
-                                        <div className="flip-card-back">
-                                            <h4>Himachal Pradesh</h4>
-                                            <button
-                                                onClick={() => this.himachaldevotional()}
-                                                className='btntamilnadudevotional'
-                                            >Himachal devotional</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </center><br />
-
+                            
                         </div>
                         : null
                     }
@@ -403,11 +390,13 @@ class Home extends Component {
                                             <div className="flip-card-front">
                                                 <img
                                                     className='tamilnaduimg'
-                                                    src='partygoa.jpg' alt="Avatar" />
+                                                    src='partykl.jpg' alt="Avatar" />
                                             </div>
                                             <div className="flip-card-back">
                                                 <h4>Goa</h4>
-                                                <button className='btntamilnadudevotional'
+                                                <button
+                                                    onClick={()=>this.goaparty()}
+                                                    className='btntamilnadudevotional'
                                                 >Goa Party Town</button>
                                             </div>
                                         </div>
@@ -430,21 +419,7 @@ class Home extends Component {
                                         </div>
                                     </div></center><br />
 
-                                    <center><div className="flip-card">
-                                        <div className="flip-card-inner">
-                                            <div className="flip-card-front">
-                                                <img
-                                                    className='tamilnaduimg'
-                                                    src='partykl.jpg' alt="Avatar" />
-                                            </div>
-                                            <div className="flip-card-back">
-                                                <h4>Kerala</h4>
-                                                <button className='btntamilnadudevotional'
-                                                >Kerala Party Town</button>
-                                            </div>
-                                        </div>
-                                    </div></center>
-
+                
 
                                 </div>
                                 : null
