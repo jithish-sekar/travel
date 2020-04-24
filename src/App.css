@@ -280,8 +280,8 @@ color:black;
   height: 50px;
 }
 .bgimgfooter1{
-  height:140px;
-  width: 120px;
+  height:150px;
+  width: 130px;
   opacity: 1;
   bottom: 0;
   position: fixed;
@@ -289,8 +289,8 @@ color:black;
 } 
 @media(max-width: 500px){
   .bgimgfooter1{
-    height:90px;
-    width:100px;
+    height:100px;
+    width:85px;
     opacity: 1;
     bottom: 0;
     position: fixed;
