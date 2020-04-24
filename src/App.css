@@ -447,3 +447,15 @@ color:black;
 .logo{
 height: 37px;
 }
+
+.adv{
+  height:180px;
+  width:260px;
+}
+.adventure{
+
+  font-family: 'Exo 2', sans-serif;
+  font-size: 13px;
+  /* font-family: 'PT Sans Narrow', sans-serif; */
+  opacity: 1;
+}

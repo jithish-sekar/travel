@@ -48,7 +48,7 @@ class tndevotional extends Component {
         this.setState({
             showmaduraifood: !this.state.showmaduraifood,
             showmaduraiseedo: false,
-            showlifestyle: false
+            showmadurailifestyle: false
         })
     }
 
@@ -56,14 +56,15 @@ class tndevotional extends Component {
         this.setState({
             showmaduraiseedo: !this.state.showmaduraiseedo,
             showmaduraifood: false,
-            showlifestyle: false
+            showmadurailifestyle: false
         })
     }
     madurailifestyle() {
         this.setState({
+            showmadurailifestyle: !this.state.showmadurailifestyle,
             showmaduraiseedo: false,
-            showmaduraifood: false,
-            showmadurailifestyle: !this.state.showmadurailifestyle
+            showmaduraifood: false
+           
         })
     }
 

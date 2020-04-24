@@ -48,7 +48,7 @@ class Kadevotional extends Component {
         this.setState({
             showmaduraifood: !this.state.showmaduraifood,
             showmaduraiseedo: false,
-            showlifestyle: false
+            showmadurailifestyle: false
         })
     }
 
@@ -56,14 +56,14 @@ class Kadevotional extends Component {
         this.setState({
             showmaduraiseedo: !this.state.showmaduraiseedo,
             showmaduraifood: false,
-            showlifestyle: false
+            showmadurailifestyle: false
         })
     }
     madurailifestyle() {
         this.setState({
+             showmadurailifestyle: !this.state.showmadurailifestyle,
             showmaduraiseedo: false,
-            showmaduraifood: false,
-            showmadurailifestyle: !this.state.showmadurailifestyle
+            showmaduraifood: false
         })
     }
 
@@ -214,7 +214,7 @@ class Kadevotional extends Component {
                             className='gallery'
                             src="srikrishna.jpg" />
                         <h1 className='instruction'>
-                            Thrissur also known by its former name Trichur, is a city and the headquarters of the Thrissur district in Kerala, India. Known as “God’s Own Town”, it is famous for the Pooram festival, one of the most celebrated festivals in the world. It is the third largest urban agglomeration in Kerala after Kochi and Calicut urban areas and the 20th largest in India.
+                        Udupi, otherwise spelt Udipi and also known as Odipu, is a city in the Indian state of Karnataka. It is the administrative headquarters of Udupi District. It is one of the fastest growing cities in Karnataka and has various educational institutions. Udupi is one of the top tourist attractions in Karnataka. 
                         </h1>
                         <button
                             onClick={() => this.maduraifood()}
@@ -224,7 +224,7 @@ class Kadevotional extends Component {
                             className='btnquatation'>See & Do</button>
                         <button
                             onClick={() => this.madurailifestyle()}
-                            className='btnquatation '>Lifestyle</button>
+                            className='btnquatation'>Lifestyle</button>
 
 
                         {this.state.showmaduraifood ?

@@ -85,6 +85,18 @@ class Home extends Component {
     tnhills() {
         this.props.history.push('/tamilnaduhills')
     }
+    klhills() {
+        this.props.history.push('/keralahills')
+    }
+    himachalhills() {
+        this.props.history.push('/himachalhills')
+    }
+    himachaladv() {
+        this.props.history.push('/himachaladventure')
+    }
+    utadv() {
+        this.props.history.push('/uttarakhandadvebture')
+    }
 
     render() {
         return (
@@ -233,7 +245,7 @@ class Home extends Component {
                                     <div className="flip-card-back">
                                         <h4></h4>
                                         <button
-                                            onClick={()=>this.tnhills()}
+                                            onClick={() => this.tnhills()}
                                             className='btntamilnadudevotional'
                                         >Tamilnadu Hills</button>
                                     </div>
@@ -252,28 +264,14 @@ class Home extends Component {
                                     <div className="flip-card-back">
                                         <h4>Kerala</h4>
                                         <button
+                                            onClick={() => this.klhills()}
                                             className='btntamilnadudevotional'
                                         >Kerala hills</button>
                                     </div>
                                 </div>
                             </div></center><br />
 
-                            <center><div className="flip-card">
-                                <div className="flip-card-inner">
-                                    <div className="flip-card-front">
-                                        <img
-                                            className='tamilnaduimg'
-                                            src='kahills.jpg' alt="Avatar" />
-                                    </div>
-                                    <div className="flip-card-back">
-                                        <h4>Karnataka</h4>
-                                        <button
-                                            className='btntamilnadudevotional'
-                                        >Karnataka hills</button>
-                                    </div>
-                                </div>
-                            </div></center><br />
-
+                            
                             <center>
                                 <div className="flip-card">
                                     <div className="flip-card-inner">
@@ -285,6 +283,7 @@ class Home extends Component {
                                         <div className="flip-card-back">
                                             <h4>Himachal Pradesh</h4>
                                             <button
+                                                onClick={() => this.himachalhills()}
                                                 className='btntamilnadudevotional'
                                             >Himachal hills</button>
                                         </div>
@@ -311,6 +310,7 @@ class Home extends Component {
                                             <h4>HimachalPradesh
                                             </h4>
                                             <button
+                                                onClick={()=>this.himachaladv()}
                                                 className='btntamilnadudevotional'
                                             >Himachal Adventure</button>
                                         </div>
@@ -329,6 +329,7 @@ class Home extends Component {
                                         <div className="flip-card-back">
                                             <h4>Uttarakhand</h4>
                                             <button
+                                                onClick={()=>this.utadv()}
                                                 className='btntamilnadudevotional'
                                             >Uttarakhand Adventure</button>
                                         </div>
@@ -453,15 +454,15 @@ class Home extends Component {
                                 : null
                             }
                         </div>
-                        
+
                         <h2 className='exceptionalquality'>ECXEPTIONAL QUALITY</h2>
                         <h1 className='crafting'>Crafting exceptional experiences in the
                         world's most memorable places.
                         </h1>
                         <center>
-                        <button
-                            onClick={() => this.learn()}
-                            className='learnbtn'>Learn More
+                            <button
+                                onClick={() => this.learn()}
+                                className='learnbtn'>Learn More
                         </button>
                         </center>
 

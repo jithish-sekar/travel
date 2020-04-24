@@ -48,7 +48,7 @@ class Kldevotional extends Component {
         this.setState({
             showmaduraifood: !this.state.showmaduraifood,
             showmaduraiseedo: false,
-            showlifestyle: false
+            showmadurailifestyle: false
         })
     }
 
@@ -56,7 +56,7 @@ class Kldevotional extends Component {
         this.setState({
             showmaduraiseedo: !this.state.showmaduraiseedo,
             showmaduraifood: false,
-            showlifestyle: false
+            showmadurailifestyle: false
         })
     }
     madurailifestyle() {

@@ -9,6 +9,10 @@ import Kadevotional from './kadevotional'
 import Himachaldevotional from './himachaldevotional';
 import Tnhills from './tnhills';
 import FormsPage from './formvalidation';
+import Klhills from './klhills';
+import Himachalhills from './himachalhills';
+import Himachaladventure from './himachaladventure';
+import Utadventure from './uttarakhandadventure';
 
 const Main = () => (
     <Switch>
@@ -20,7 +24,11 @@ const Main = () => (
         <Route path='/keraladevotional' component={Kldevotional} />
         <Route path='/karnatakadevotional' component={Kadevotional} />
         <Route path='/himachaldevotional' component={Himachaldevotional} />
-        <Route path='/tamilnaduhills' component={Tnhills}/>
+        <Route path='/tamilnaduhills' component={Tnhills} />
+        <Route path='/keralahills' component={Klhills} />
+        <Route path='/himachalhills' component={Himachalhills}/>
+        <Route path='/himachaladventure' component={Himachaladventure} />
+        <Route path='/uttarakhandadvebture' component={Utadventure}/>
         <Route path='/enquiry' component={FormsPage} />
     </Switch>
 )

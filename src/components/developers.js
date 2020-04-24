@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-class Developer extends Component{
+class Developer extends Component {
     render() {
         return (
-            
-            <div>developers</div>
+
+            <div>
+
+                <img src="para.png" />
+            </div>
         )
     }
 }
