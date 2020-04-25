@@ -54,7 +54,7 @@ class Developer extends Component {
                         <h2 className='developerh2'>
                             DHANUSH SUNDARAJAN...
                         </h2>
-                        <h1 className='devrole'>Full Stack Web Developer</h1>   
+                        <h1 className='devrole'>Graphic Designer</h1>   
 
                     </div>
 
