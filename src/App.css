@@ -545,3 +545,13 @@ margin-bottom: -10px;
 
 }
 }
+.devimg{
+  height: 300px;
+  width: auto;
+  display: flex;
+}
+/* .team-area{
+  display: flex;
+ width:60%;
+  justify-content: space-around;
+} */
