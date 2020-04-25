@@ -44,7 +44,7 @@ class Developer extends Component {
                         <ul className="social-icon">
                             <li><a href='https://www.facebook.com/dhanush.sundararajan' > <i class="fa fa-facebook-square"></i></a><span></span></li>
                             <li><a href='https://www.linkedin.com/in/dhanush-s-b125491a7/' > <i class="fa fa-linkedin-square"></i></a><span></span></li>
-                            <li><a href='https://www.behance.net/dhanushs1'><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href='https://twitter.com/dhan619?s=08'><i class="fa fa-twitter-square"></i></a></li>
                             <li><a href='https://github.com/dhanush2206'><i class="fa fa-github-square"></i></a></li>
                             <li><a href='https://www.behance.net/dhanushs1'><i class='fa fa-behance-square " rel="noopener noreferrer" target="_blank"'></i></a></li>
                         </ul>
@@ -55,7 +55,7 @@ class Developer extends Component {
                             DHANUSH SUNDARAJAN...
                         </h2>
                         <p className='devrole'>Graphic Designer</p>
-<br/>
+                        <br />
                     </div>
 
                 </center>
