@@ -634,6 +634,7 @@ width:17ch;
   }
 }
 .devrole{
+  margin: 0px;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
