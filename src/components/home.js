@@ -106,7 +106,9 @@ class Home extends Component {
     goaparty() {
         this.props.history.push('/goaparty')
     }
-
+    kaparty() {
+        this.props.history.push('/karnatakaparty')
+    }
 
     render() {
         return (
@@ -413,7 +415,9 @@ class Home extends Component {
                                             </div>
                                             <div className="flip-card-back">
                                                 <h4>Karnataka</h4>
-                                                <button className='btntamilnadudevotional'
+                                                <button
+                                                    onClick={()=>this.kaparty()}
+                                                    className='btntamilnadudevotional'
                                                 >Karnataka Party Town</button>
                                             </div>
                                         </div>

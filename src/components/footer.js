@@ -20,7 +20,7 @@ class Footerpage extends Component {
                     <span className='ftrp'>Home</span>
                     <span className='ftrp'>About</span>
                     <span className='ftrp'>Developers</span><br/>
-                    <span className='copyryt'>&#169; 2020 copyright:<a href="destiny.org.in">Destinys.org.in</a></span>
+                    <span className='copyryt'>&#169; 2020 copyright:<a href="https://www.destinys.org.in/">Destinys.org.in</a></span>
                 </center>
             </div>
 

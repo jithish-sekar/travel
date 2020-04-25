@@ -602,9 +602,35 @@ margin-bottom: -10px;
   transform:translateY(40px);
   opacity: 1;
 }
+
+.board1{
+  height: 240px;
+  width: 150px;
+}
 .details{
   position: absolute;
   bottom: 0;
   left: 0;
   background: #fff;
+}
+.developerh2{
+animation: type 4s infinite steps(17);
+overflow: hidden;
+white-space: nowrap;
+font-family:consolas;
+border-right: 2px solid black;
+width:17ch;
+}
+@keyframes type {
+  0%{
+    width: 0ch;
+  }
+  100%{
+   width:19ch;
+  }
+}
+.devrole{
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
 }
