@@ -135,7 +135,7 @@ class Kadevotional extends Component {
                             className="gallery"
                             src="murudesh.jpg" /><br />
                         <h1 className='instruction'>
-                            Uttara Kannada, formerly known as North Canara, is a district in the Indian state of Karnataka. It is bordered by the state of Goa and Belagavi District to the north, Dharwad District and Haveri District to the east, Shivamogga District, and Udupi District to the south, and the Arabian Sea to the west.
+                            Uttara Kannada, formerly known as North Canara, is a district in the Indian state of Karnataka. It is bordered by the state of Goa and Belagavi District to the north, Dharwad District and Haveri District to the east, Shivamogga District, and Udupi District to the south.
                         </h1>
                         <button
                             onClick={() => this.trivandrumfood()}
@@ -214,7 +214,7 @@ class Kadevotional extends Component {
                             className='gallery'
                             src="srikrishna.jpg" />
                         <h1 className='instruction'>
-                        Udupi, otherwise spelt Udipi and also known as Odipu, is a city in the Indian state of Karnataka. It is the administrative headquarters of Udupi District. It is one of the fastest growing cities in Karnataka and has various educational institutions. Udupi is one of the top tourist attractions in Karnataka. 
+                        Udupi, otherwise spelt Udipi and also known as Odipu, is a city in the Indian state of Karnataka. It is the administrative headquarters of Udupi District. It is one of the fastest growing cities in Karnataka and has various educational institutions. 
                         </h1>
                         <button
                             onClick={() => this.maduraifood()}

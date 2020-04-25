@@ -4,11 +4,11 @@ class Aboutus extends Component {
     render() {
         return (
             <div className="aboutPage">
-
+<br/><br/>
                 <center>
                     <img
-                        className='bgimg'
-                        src='destiny3.png' />
+                        className='board'
+                        src='board.png' />
                 </center>
                 <h1 className='h1about'>"We collaborate with brands and agencies to create memorable experiences."
                  </h1>

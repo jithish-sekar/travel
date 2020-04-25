@@ -16,6 +16,7 @@ import Utadventure from './uttarakhandadventure';
 import Goa from './goabeach';
 import Keralabeach from './keralabeach';
 import Goaparty from './goaparty';
+import Getcall from './getcall';
 
 const Main = () => (
     <Switch>
@@ -34,7 +35,8 @@ const Main = () => (
         <Route path='/uttarakhandadvebture' component={Utadventure} />
         <Route path='/goabeach' component={Goa} />
         <Route path='/keralabeach' component={Keralabeach} />
-        <Route path='/goaparty' component={Goaparty}/>
+        <Route path='/goaparty' component={Goaparty} />
+        <Route path='/getcall' component={Getcall}/>
         <Route path='/enquiry' component={FormsPage} />
     </Switch>
 )

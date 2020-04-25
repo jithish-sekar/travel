@@ -4,8 +4,13 @@ class Developer extends Component {
         return (
 
             <div>
+                <center>
+                    <img
+                        className='board'
+                        src='board.png' />
+                    <h3 className='developers'>developers</h3>
+                </center>
 
-                <img src="para.png" />
             </div>
         )
     }

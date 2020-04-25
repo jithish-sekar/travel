@@ -215,7 +215,7 @@ class tndevotional extends Component {
                             className='gallery'
                             src="tamildevo2.jpg" />
                         <h1 className='instruction'>
-                            Madurai is closely associated with the Tamil language, and the third Tamil Sangam, a major congregation of Tamil scholars said to have been held in the city. The recorded history of the city goes back to the 3rd century BCE, being mentioned by Megasthenes, the Greek ambassador to the Maurya empire, and Kautilya, a minister of the Mauryan emperor Chandragupta Maurya. Signs of human settlements and Roman trade links dating back to 300 BC are evident from excavations by Archeological Survey of India in Manal
+                            Madurai is closely associated with the Tamil language, and the third Tamil Sangam, a major congregation of Tamil scholars said to have been held in the city. The recorded history of the city goes back to the 3rd century BCE, being mentioned by Megasthenes, the Greek ambassador to the Maurya empire, and Kautilya, a minister of the Mauryan emperor Chandragupta Maurya.
                         </h1>
                         <button
                             onClick={() => this.maduraifood()}

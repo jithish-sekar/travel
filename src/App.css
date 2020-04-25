@@ -467,7 +467,7 @@ height: 37px;
 .h1about{
   text-align: center;
   color: #f2fcfe;
-  font-size: 30px;
+  font-size: 28px;
   font-family: 'Raleway', sans-serif;
   margin-top: 30px;
 }
@@ -491,7 +491,7 @@ height: 37px;
   text-align: center; 
   display: block;
   width: 100%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .strategies{
@@ -510,4 +510,38 @@ height: 37px;
   color: black;
   font-size: 17px;
   font-weight: 250;
+}
+.formvalid{
+  background-color: white;
+}
+.board{
+  height: 245px;
+  width: 220px;
+}
+.developers{  
+  color:rgb(24, 23, 23);
+  font-size: 22px;
+  text-transform: uppercase;
+  animation: text 3s 1;
+  font-family: 'Exo 2', sans-serif;
+
+  margin: 0;
+  
+}
+
+
+@keyframes text{
+  0%{
+  color:rgb(255, 255, 255);
+  margin-bottom: -40px;  
+}
+30%{
+  letter: spacing 25px; 
+  margin-bottom: -10px;
+}
+85%{
+letter-spacing: 8px;
+margin-bottom: -10px;
+
+}
 }

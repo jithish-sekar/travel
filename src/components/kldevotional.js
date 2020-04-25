@@ -135,7 +135,7 @@ class Kldevotional extends Component {
                             className="gallery"
                             src="trivandrum.jpg" /><br />
                         <h1 className='instruction'>
-                            The encompassing urban agglomeration population is around 1.68 million. Located on the west coast of India near the extreme south of the mainland, Thiruvananthapuram is a major Information Technology hub in Kerala and contributes 55% of the state's software exports as of 2016. Referred to by Mahatma Gandhi as the "Evergreen city of India",the city is characterised by its undulating terrain of low coastal hills.                        </h1>
+                            The encompassing urban agglomeration population is around 1.68 million. Located on the west coast of India near the extreme south of the mainland, Thiruvananthapuram is a major Information Technology hub in Kerala and contributes 55% of the state's software exports as of 2016.</h1>
                         <button
                             onClick={() => this.trivandrumfood()}
                             className='btnquatation'>Food & Drink</button>
@@ -213,7 +213,7 @@ class Kldevotional extends Component {
                             className='gallery'
                             src="guruvayur.jpg" />
                         <h1 className='instruction'>
-                        Thrissur also known by its former name Trichur, is a city and the headquarters of the Thrissur district in Kerala, India. Known as “God’s Own Town”, it is famous for the Pooram festival, one of the most celebrated festivals in the world. It is the third largest urban agglomeration in Kerala after Kochi and Calicut urban areas and the 20th largest in India.
+                        Thrissur also known by its former name Trichur, is a city and the headquarters of the Thrissur district in Kerala, India. Known as “God’s Own Town”, it is famous for the Pooram festival.
                         </h1>
                         <button
                             onClick={() => this.maduraifood()}

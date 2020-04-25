@@ -1,47 +1,153 @@
-import React from "react";
-import { MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
+import React, { Component } from "react";
+import { MDBRow, MDBCol, MDBInput } from "mdbreact";
+class Popup extends Component {
+  constructor(props) {
+    super(props);
+  }
+  getHead() {
+    switch (this.props.type) {
+      case "SUBMITTED": return "ThankYou";
+    }
+  }
+  render() {
+    return (
+      <div className="popup">
+        <div>
+          <h4 className='h4'>{this.getHead()}</h4>
+          <h1>Sucess!!</h1>
+          {this.props.type}
+        </div>
+      </div>
+    );
+  }
+}
 
-class FormsPage extends React.Component {
+class FormsPage extends Component {
+  constructor(props) {
+    super(props);
+    this.items = [
+      'Tamil Nadu',
+      'kerala',
+      'karnataka',
+      'Andhra Pradesh',
+      'Arunachal Pradesh',
+      'Assam',
+      'Bihar',
+      'Chhattisgarh',
+      'Goa',
+      'Gujarat',
+      'Haryana',
+      'Himachal Pradesh',
+      'JharKhand',
+      'Madhya Pradesh',
+      'Maharashtra',
+      'Manipur',
+      'Meghalya',
+      'Mizoram',
+      'Nagaland',
+      'Odisha',
+      'Punjab',
+      'Rajasthan',
+      'Sikkim',
+      'Telangana',
+      'Tirpura',
+      'Uttar Pradesh',
+      'Uttarkhand',
+      'West Bengal'
+    ];
+    this.state = {
+      suggestions: [],
+      text: '',
+      popupType: "",
+      showPopup: false,
+
+    }
+  }
+
+  openPopup = (arg) => {
+    this.setState({
+      showPopup: true,
+      popupType: arg
+    });
+  }
+
+  closePopup = () => {
+    this.setState({
+      showPopup: false,
+      popupType: ""
+    });
+  }
+
+  onTextChange = (e) => {
+    const value = e.target.value;
+    let suggestions = [];
+    if (value.length > 0) {
+      const regex = new RegExp(`^${value}`, 'i');
+      suggestions = this.items.sort().filter(v => regex.test(v));
+    }
+    this.setState(() => ({ suggestions, text: value }))
+  }
+
+  suggestionSelected(value) {
+    this.setState(() => ({
+      text: value,
+      suggestions: [],
+    }))
+  }
+  renderSuggestions() {
+    const { suggestions } = this.state;
+    if (suggestions.length === 0) {
+      return null;
+    }
+    return (
+
+      <ul>{suggestions.map((item) => <ul onClick={() => this.suggestionSelected(item)}>{item}</ul>)}</ul>
+
+    )
+  }
   state = {
-    fname: {
-      value: "Mark",
-      valid: true
-    },
-    lname: {
-      value: "Otto",
-      valid: true
-    },
-    email: {
-      value: "",
-      valid: false
-    },
-    city: {
-      value: "",
-      valid: false
-    },
-    state: {
-      value: "",
-      valid: false
-    },
-    zip: {
-      value: "",
-      valid: false
+    fname: "",
+    lname: "",
+    email: "",
+    city: "",
+    state: "",
+    MobileNumber: ""
+  };
+
+  submitHandler = event => {
+    event.preventDefault();
+    event.target.className += " was-validated";
+    console.log(event.target)
+    if (event.target.checkValidity()) {
+      this.openPopup("Will contact you shortly!")
+    } else {
+      //all if switch state 
     }
   };
 
   changeHandler = event => {
-    this.setState({ [event.target.name]: { value: event.target.value, valid: !!event.target.value } });
+    this.setState({ [event.target.name]: event.target.value });
   };
 
+  getcall() {
+    this.props.history.push('/getcall')
+  }
+
   render() {
+    const { text } = this.state;
     return (
-      <div>
-        <form className='formstyle'>
+      <div className='formvalid'>
+       <center> <h2 className='planquatation'>Trip enquiry</h2> </center>
+        <h5 className='h5issue'>*fill your details*</h5>
+        <form
+          className="needs-validation"
+          onSubmit={this.submitHandler}
+          noValidate
+        >
           <MDBRow>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.fname.value}
-                className={this.state.fname.valid ? "is-valid" : "is-invalid"}
+                value={this.state.fname}
                 name="fname"
                 onChange={this.changeHandler}
                 type="text"
@@ -50,13 +156,11 @@ class FormsPage extends React.Component {
                 required
               >
                 <div className="valid-feedback">Looks good!</div>
-                <div className="invalid-feedback">Provide a valid name!</div>
               </MDBInput>
             </MDBCol>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.lname.value}
-                className={this.state.lname.valid ? "is-valid" : "is-invalid"}
+                value={this.state.lname}
                 name="lname"
                 onChange={this.changeHandler}
                 type="text"
@@ -65,13 +169,11 @@ class FormsPage extends React.Component {
                 required
               >
                 <div className="valid-feedback">Looks good!</div>
-                <div className="invalid-feedback">Provide a valid last name!</div>
               </MDBInput>
             </MDBCol>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.email.value}
-                className={this.state.email.valid ? "is-valid" : "is-invalid"}
+                value={this.state.email}
                 onChange={this.changeHandler}
                 type="email"
                 id="materialFormRegisterConfirmEx3"
@@ -87,8 +189,7 @@ class FormsPage extends React.Component {
           <MDBRow>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.city.value}
-                className={this.state.city.valid ? "is-valid" : "is-invalid"}
+                value={this.state.city}
                 onChange={this.changeHandler}
                 type="text"
                 id="materialFormRegisterPasswordEx4"
@@ -104,15 +205,16 @@ class FormsPage extends React.Component {
             </MDBCol>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.state.value}
-                className={this.state.state.valid ? "is-valid" : "is-invalid"}
-                onChange={this.changeHandler}
+                className='AutoCompleteText'
+                value={text}
+                onChange={this.onTextChange}
                 type="text"
                 id="materialFormRegisterPasswordEx4"
                 name="state"
                 label="State"
-                required
-              >
+                required>
+                {this.renderSuggestions()}
+
                 <div className="invalid-feedback">
                   Please provide a valid state.
                 </div>
@@ -121,13 +223,12 @@ class FormsPage extends React.Component {
             </MDBCol>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.zip.value}
-                className={this.state.zip.valid ? "is-valid" : "is-invalid"}
+                value={this.state.MobileNumber}
                 onChange={this.changeHandler}
                 type="text"
                 id="materialFormRegisterPasswordEx4"
-                name="zip"
-                label="Zip"
+                name="MobileNumber"
+                label="Mobile Number"
                 required
               >
                 <div className="invalid-feedback">
@@ -137,7 +238,7 @@ class FormsPage extends React.Component {
               </MDBInput>
             </MDBCol>
           </MDBRow>
-          <MDBRow>
+          {/* <MDBRow>
             <MDBInput
               type="checkbox"
               value="conditions"
@@ -149,14 +250,26 @@ class FormsPage extends React.Component {
                 You must agree before submitting.
               </div>
             </MDBInput>
-          </MDBRow>
-          <MDBBtn color="blue" type="submit">
-            Submit Form
-          </MDBBtn>
+          </MDBRow> */}
+          <center>
+            <button
+              onClick={()=>this.getcall()}
+              className='talkDoc'
+              type="submit"
+          >
+              Submit Form
+          </button></center>
+          <hr />
         </form>
+<br/><br/><br/><br/><br/>
+        {this.state.showPopup === true &&
+          <div>
+            <Popup type={this.state.popupType} />
+            <div onSubmit={e => { this.closePopup() }} className="overlay"></div>
+          </div>
+        }
       </div>
     );
   }
 }
-
 export default FormsPage;
