@@ -99,7 +99,7 @@ class Goa extends Component {
                 <h1 className='devotionalh1'>Goa Beach</h1>
                 <center>
                     <img
-                        className='devimg'
+                        className='devimg1'
                         src='beach.png' />
                 </center>
                 <h2 className='tndevotional'>Destinys Goa Packages</h2>

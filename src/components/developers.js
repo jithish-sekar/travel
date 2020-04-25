@@ -16,7 +16,7 @@ class Developer extends Component {
                     <div className='box'>
                         <div className='imgBx'>
                             <img
-                                className='devimg'
+                                className='devimg2'
                                 src='jithu6.jpg' />
                         </div>
                         <ul className="social-icon">
@@ -30,7 +30,7 @@ class Developer extends Component {
                     <div className='box'>
                         <div className='imgBx'>
                             <img
-                                className='devimg'
+                                className='devimg2'
                                 src='dhanush1.jpg' />
                         </div>
                         <ul className="social-icon">
@@ -44,7 +44,7 @@ class Developer extends Component {
                     <br />
                 
                     
-                    
+
                 </center>
             </div>
 

@@ -98,7 +98,7 @@ class Tnhills extends Component {
                 <h1 className='devotionalh1'>Tamilnadu Hills Station</h1>
                 <center>
                     <img
-                        className='devimg'
+                        className='devimg1'
                         src='hills.png' />
                 </center>
                 <h2 className='tndevotional'>Destinys Hills Station Packages</h2>
