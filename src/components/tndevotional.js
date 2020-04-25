@@ -173,10 +173,10 @@ class tndevotional extends Component {
                                 <img
                                     className='gallery1'
                                     src="thanjavurbigtemple.jpg" />
-                                <h1 className='foods'>Thanjavur Thalayatti Bommai</h1>
+                                <h1 className='foods'>Thyagaraja Temple</h1>
                                 <img
                                     className='gallery1'
-                                    src='thalaiattibomai.jpg' />
+                                    src='thanja2.jpg' />
                             </div>
                             : null
                         }

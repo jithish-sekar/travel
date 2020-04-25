@@ -111,7 +111,7 @@ class Goa extends Component {
                             <i class="fa fa-download"></i>
                         </button>
                     </a>
-                    <a href="goa1.pdf">
+                    <a href="goa2 (1).pdf">
                         <button className='btnquatation'>
                             Package 2
                             <i class="fa fa-download"></i>

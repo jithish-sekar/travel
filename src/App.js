@@ -12,7 +12,7 @@ const App = (props) => {
         <HeaderComponent history={props.history} />
         <Main />
       </div>
-      <Footerpage />
+      <Footerpage history={props.history} />
     </div>
   );
 };

@@ -134,42 +134,28 @@ class Kaparty extends Component {
                         </h5>
                         <img
                             className="gallery"
-                            src="titos.jpg" /><br />
+                            src="blore.jpg" /><br />
                         <h1 className='instruction'>
-                            Club Titos is Goa's most famous and popular nightclub.It is located at Titos Lane in Baga, very close to the beach. One of Goa's first discos, it is now extremely popular and the place to go for everyone looking for music, dancing, and also good food and drinks.
+
+                            Bengaluru is sometimes referred to as the "Silicon Valley of India" (or "IT capital of India") because of its role as the nation's leading information technology (IT) exporter. Indian technological organisations ISRO, Infosys, Wipro and HAL are headquartered in the city.
                         </h1>
                         <div className='adventure'>
-                            <h1> Things to do in Goa</h1>
-                            <h2>1.Titos Party Lane</h2>
+                            <h1> Things to do in Bangalore</h1>
+                            <h2>1.Toit Bangalore</h2>
                             <img
                                 className='adv'
-                                src="titos1.jpg" /><br /><br />
-                            <a href='https://titosgoa.com/'><button className='enqbook'>Book</button></a>
+                                src="toit.jpg" /><br /><br />
+                            <a href='https://www.bookeventz.com/banquets/bangalore/indiranagar/toit'><button className='enqbook'>Book</button></a>
                             <br /><br />
                             <div className='adventure'>
-                                <h2>2.Casino Pride</h2>
+                                <h2>2.NoLimits</h2>
                                 <img
                                     className='adv'
-                                    src="casino.jpg" /><br/><br/>
-                                <a href='http://www.bestgoacasino.com/'><button className='enqbook'>Book</button></a>
-
-
-                            </div><br />
-                            <div className='adventure'>
-                                <h2>3.Goa Yacht</h2>
-                                <img
-                                    className='adv'
-                                    src="yacht.jpg" /><br/><br/>
-                                <a href='https://www.goayacht.com/goa-yacht-bayliner-discovery-2322.html'><button className='enqbook'>Book</button></a>
-
-
+                                    src="NoLimmits.jpg" /><br /><br />
+                                <a href='https://nolimmits.in/'><button className='enqbook'>Book</button></a>
                             </div>
 
-
-
                         </div>
-
-
 
 
 

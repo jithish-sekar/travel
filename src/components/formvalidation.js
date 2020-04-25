@@ -1,144 +1,28 @@
-import React, { Component } from "react";
-import { MDBRow, MDBCol, MDBInput } from "mdbreact";
-class Popup extends Component {
-  constructor(props) {
-    super(props);
-  }
-  getHead() {
-    switch (this.props.type) {
-      case "SUBMITTED": return "ThankYou";
-    }
-  }
-  render() {
-    return (
-      <div className="popup">
-        <div>
-          <h4 className='h4'>{this.getHead()}</h4>
-          <h1>Sucess!!</h1>
-          {this.props.type}
-        </div>
-      </div>
-    );
-  }
-}
+import React from "react";
+import { MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
 
-class FormsPage extends Component {
-  constructor(props) {
-    super(props);
-    this.items = [
-      'Tamil Nadu',
-      'kerala',
-      'karnataka',
-      'Andhra Pradesh',
-      'Arunachal Pradesh',
-      'Assam',
-      'Bihar',
-      'Chhattisgarh',
-      'Goa',
-      'Gujarat',
-      'Haryana',
-      'Himachal Pradesh',
-      'JharKhand',
-      'Madhya Pradesh',
-      'Maharashtra',
-      'Manipur',
-      'Meghalya',
-      'Mizoram',
-      'Nagaland',
-      'Odisha',
-      'Punjab',
-      'Rajasthan',
-      'Sikkim',
-      'Telangana',
-      'Tirpura',
-      'Uttar Pradesh',
-      'Uttarkhand',
-      'West Bengal'
-    ];
-    this.state = {
-      suggestions: [],
-      text: '',
-      popupType: "",
-      showPopup: false,
-
-    }
-  }
-
-  openPopup = (arg) => {
-    this.setState({
-      showPopup: true,
-      popupType: arg
-    });
-  }
-
-  closePopup = () => {
-    this.setState({
-      showPopup: false,
-      popupType: ""
-    });
-  }
-
-  onTextChange = (e) => {
-    const value = e.target.value;
-    let suggestions = [];
-    if (value.length > 0) {
-      const regex = new RegExp(`^${value}`, 'i');
-      suggestions = this.items.sort().filter(v => regex.test(v));
-    }
-    this.setState(() => ({ suggestions, text: value }))
-  }
-
-  suggestionSelected(value) {
-    this.setState(() => ({
-      text: value,
-      suggestions: [],
-    }))
-  }
-  renderSuggestions() {
-    const { suggestions } = this.state;
-    if (suggestions.length === 0) {
-      return null;
-    }
-    return (
-
-      <ul>{suggestions.map((item) => <ul onClick={() => this.suggestionSelected(item)}>{item}</ul>)}</ul>
-
-    )
-  }
+class FormsPage extends React.Component {
   state = {
-    fname: "",
-    lname: "",
+    fname: "Mark",
+    lname: "Otto",
     email: "",
     city: "",
     state: "",
-    MobileNumber: ""
+    zip: ""
   };
 
   submitHandler = event => {
     event.preventDefault();
     event.target.className += " was-validated";
-    console.log(event.target)
-    if (event.target.checkValidity()) {
-      this.openPopup("Will contact you shortly!")
-    } else {
-      //all if switch state 
-    }
   };
 
   changeHandler = event => {
     this.setState({ [event.target.name]: event.target.value });
   };
 
-  getcall() {
-    this.props.history.push('/getcall')
-  }
-
   render() {
-    const { text } = this.state;
     return (
-      <div className='formvalid'>
-       <center> <h2 className='planquatation'>Trip enquiry</h2> </center>
-        <h5 className='h5issue'>*fill your details*</h5>
+      <div>
         <form
           className="needs-validation"
           onSubmit={this.submitHandler}
@@ -205,16 +89,14 @@ class FormsPage extends Component {
             </MDBCol>
             <MDBCol md="4">
               <MDBInput
-                className='AutoCompleteText'
-                value={text}
-                onChange={this.onTextChange}
+                value={this.state.state}
+                onChange={this.changeHandler}
                 type="text"
                 id="materialFormRegisterPasswordEx4"
                 name="state"
                 label="State"
-                required>
-                {this.renderSuggestions()}
-
+                required
+              >
                 <div className="invalid-feedback">
                   Please provide a valid state.
                 </div>
@@ -223,12 +105,12 @@ class FormsPage extends Component {
             </MDBCol>
             <MDBCol md="4">
               <MDBInput
-                value={this.state.MobileNumber}
+                value={this.state.zip}
                 onChange={this.changeHandler}
                 type="text"
                 id="materialFormRegisterPasswordEx4"
-                name="MobileNumber"
-                label="Mobile Number"
+                name="zip"
+                label="Zip"
                 required
               >
                 <div className="invalid-feedback">
@@ -238,7 +120,7 @@ class FormsPage extends Component {
               </MDBInput>
             </MDBCol>
           </MDBRow>
-          {/* <MDBRow>
+          <MDBRow>
             <MDBInput
               type="checkbox"
               value="conditions"
@@ -250,26 +132,14 @@ class FormsPage extends Component {
                 You must agree before submitting.
               </div>
             </MDBInput>
-          </MDBRow> */}
-          <center>
-            <button
-              onClick={()=>this.getcall()}
-              className='talkDoc'
-              type="submit"
-          >
-              Submit Form
-          </button></center>
-          <hr />
+          </MDBRow>
+          <MDBBtn color="success" type="submit">
+            Submit Form
+          </MDBBtn>
         </form>
-<br/><br/><br/><br/><br/>
-        {this.state.showPopup === true &&
-          <div>
-            <Popup type={this.state.popupType} />
-            <div onSubmit={e => { this.closePopup() }} className="overlay"></div>
-          </div>
-        }
       </div>
     );
   }
 }
+
 export default FormsPage;

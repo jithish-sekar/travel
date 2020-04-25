@@ -104,7 +104,7 @@ class Goaparty extends Component {
                 </center>
                 <h2 className='tndevotional'>Destinys Goa Packages</h2>
                 <center>
-                    <a href="goa1.pdf">
+                    <a href="goa2 (1).pdf">
                         <button
                             className='btnquatation'>
                             Package 1
