@@ -621,7 +621,8 @@ margin-bottom: -10px;
 animation: type 4s infinite steps(17);
 overflow: hidden;
 white-space: nowrap;
-font-family:consolas;
+font-family: 'Exo 2', sans-serif;
+
 border-right: 2px solid black;
 width:17ch;
 }
