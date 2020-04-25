@@ -387,6 +387,9 @@ color:black;
   height:100px;
   color:#9e9a9a
 }
+.needs-validation{
+  background-color: white;
+}
 .ftrp{
   margin: 0;
   text-align: center;

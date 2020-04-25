@@ -23,7 +23,7 @@ class Footerpage extends Component {
                         <a href='https://www.linkedin.com/in/jithish-sekar-a46a95157?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bh8jOfTQUSlWqq9PhJ2Y2Wg%3D%3D" rel="noopener noreferrer" target="_blank" ' > <i class="fa fa-linkedin-square"></i></a><span></span>
                         <a href='https://twitter.com/JithuSekar " rel="noopener noreferrer" target="_blank"'><i class="fa fa-twitter-square"></i></a>
                         <a href='https://github.com/jithish-sekar'><i class="fa fa-github-square"></i></a>
-                        <a href='https://github.com/jithish-sekar'><i class='fa fa-behance-square " rel="noopener noreferrer" target="_blank"'></i></a>
+                        <a href='https://www.behance.net/dhanushs1'><i class='fa fa-behance-square " rel="noopener noreferrer" target="_blank"'></i></a>
                     </div>
                     <br />
                     <span
