@@ -32,9 +32,9 @@ class Footerpage extends Component {
                     <span
                         onClick={() => this.footerabout()}
                         className='ftrp'>About</span>
-                    <span
+                    {/* <span
                         onClick={() => this.footerdevelopers()}
-                        className='ftrp'>Developers</span><br />
+                        className='ftrp'>Developers</span><br /> */}<br/>
                     <span className='copyryt'>&#169; 2020 copyright:<a href="https://www.destinys.org.in/">Destinys.org.in</a></span>
                 </center>
             </div>
